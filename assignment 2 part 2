@@ -1,0 +1,56 @@
+package com.untitled1;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        String name;
+        int birthdate,birthyear,birthmonth,salary,age,tax,annualsalary;
+
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter your name");
+        name=sc.nextLine();
+        System.out.println("Enter your birth date");
+        birthdate=sc.nextInt();
+        System.out.println("Enter your birth month");
+        birthmonth= sc.nextInt();
+        System.out.println("Enter your birth year");
+        birthyear=sc.nextInt();
+        System.out.println("Enter your Monthly Salary");
+        salary=sc.nextInt();
+
+
+        System.out.println("Your name is "+name);
+        age=2020-birthyear;
+        System.out.println("Your age is " +age);
+        annualsalary=salary*12;
+        System.out.println("Your annual salry is "+annualsalary);
+
+        if (salary>500000)
+        {
+            tax= (int) (salary*0.2);
+            System.out.println("Your tax is "+tax);
+        }
+        else if(salary>=400000 && salary<500000){
+            tax=(int) (salary*0.15);
+            System.out.println("Your tax is "+tax);
+        }
+        else if (salary>=300000 && salary<400000)
+        {
+            tax=(int) (salary*0.1);
+            System.out.println("Your tax is "+tax);
+        }
+        else if (salary>=200000 && salary<300000)
+        {
+            tax=(int) (salary*0.05);
+            System.out.println("Your tax is "+tax);
+        }
+        else
+        {
+            System.out.println("No tax pending");
+        }
+
+    }
+}
