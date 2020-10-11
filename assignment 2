@@ -1,0 +1,79 @@
+package com.untitled1;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int num, num1, num2, num3, num4;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter marks of first subject out of 100");
+        num = sc.nextInt();
+        System.out.println("Enter marks of second subject out of 100");
+        num1 = sc.nextInt();
+        System.out.println("Enter marks of third subject out of 100");
+        num2 = sc.nextInt();
+        System.out.println("Enter marks of fourth subject out of 100");
+        num3 = sc.nextInt();
+        System.out.println("Enter marks of fifth subject out of 100");
+        num4 = sc.nextInt();
+
+        if (num >= 75 && num <= 100) {
+            System.out.println("Your grade is A in first subject");
+        } else if (num >= 50 && num < 75) {
+            System.out.println("Your grade is B in first subject");
+        } else if (num >= 35 && num <= 49) {
+            System.out.println("Your  grade is C in first subject");
+
+        } else {
+            System.out.println("You are failed in first subject");
+        }
+
+        if (num1 >= 75 && num1 <= 100) {
+            System.out.println("Your grade is A in second subject");
+        } else if (num1 >= 50 && num1 < 75) {
+            System.out.println("Your grade is B  in Second subject");
+        } else if (num1 >= 35 && num1 <= 49) {
+            System.out.println("Your  grade is C  in second subject");
+
+        } else {
+            System.out.println("You are failed in second subject");
+        }
+
+        if (num2 >= 75 && num2 <= 100) {
+            System.out.println("Your grade is A in third subject");
+        } else if (num2 >= 50 && num2 < 75) {
+            System.out.println("Your grade is B in third subject");
+        } else if (num2 >= 35 && num2 <= 49) {
+            System.out.println("Your  grade is C in third subject");
+
+        } else {
+            System.out.println("You are failed in third subject");
+        }
+
+        if (num3 >= 75 && num3 <= 100) {
+            System.out.println("Your grade is A in fourth subject");
+        } else if (num3 >= 50 && num3 < 75) {
+            System.out.println("Your grade is B in fourth subject");
+        } else if (num3 >= 35 && num3 <= 49) {
+            System.out.println("Your  grade is C in fourth subject");
+
+        } else {
+            System.out.println("You are failed in fourth subject");
+        }
+
+        if (num4 >= 75 && num4 <= 100) {
+            System.out.println("Your grade is A in fifth subject");
+        } else if (num4 >= 50 && num4 < 75) {
+            System.out.println("Your grade is B in fifth subject");
+        } else if (num4 >= 35 && num4 <= 49) {
+            System.out.println("Your  grade is C in fifth subject");
+
+        } else {
+            System.out.println("You are failed in fifth subject");
+        }
+
+    }
+}
