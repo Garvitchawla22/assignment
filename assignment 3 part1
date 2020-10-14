@@ -1,0 +1,56 @@
+package com.untitled1;
+package com.untitled1;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Avenger[] avengers = new Avenger[5];
+
+        for (int i = 0; i < 5; i++)
+        {
+            avengers[i]=new Avenger();
+        }
+//        get details
+        for(int i=0;i<5;i++)
+        {
+            avengers[i].getdetails();
+        }
+//        print details
+        for (int i=0;i<5;i++)
+        {
+            avengers[i].dispdetails();
+        }
+    }
+}
+
+import java.util.Scanner;
+public class Avenger {
+    String name,power,weapon,planet;
+    int age;
+    Scanner sc=new Scanner(System.in);
+
+    public void getdetails()
+    {
+        System.out.println("Enter the name of Avenger");
+        name=sc.next();
+        System.out.println("Enter the Age of Avenger");
+        age=sc.nextInt();
+        System.out.println("Enter the power of Avenger");
+        power=sc.next();
+        System.out.println("Enter the Weapon of Avenger");
+        weapon=sc.next();
+        System.out.println("Enter the Planet of Avenger");
+        planet=sc.next();
+    }
+
+    public void dispdetails()
+    {
+        System.out.println("The name of avenger is "+name);
+        System.out.println("The age of avenger is "+age);
+        System.out.println("The power of avenger is "+power);
+        System.out.println("The weapon of avenger is "+weapon);
+        System.out.println("The planet of avenger is "+planet);
+    }
+}
+
